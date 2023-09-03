@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS.css">
+<title>Validation Form</title>
+</head>
+<body>
+<form action="mailto:test@dn-uk.com" method="post" enctype="text/plain" id="validate">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name" placeholder="Enter Your Name" pattern="[a-zA-Z\s]+" autofocus required><br>
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" placeholder="Enter Your Email" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9@-_+.]/g, '')" required><br>
+  </p>  
+  <p>
+    <label for="card">Card:</label>
+    <input type="text" id="card" name="Card" placeholder="Enter a Proxy Credit Card Number" pattern=".{8,}" required><br>
+  </p> 
+ <input type="submit" value="Submit" id="submit">
+</form>
+<script src="javascript.js"></script>
+</body>
+</html>
