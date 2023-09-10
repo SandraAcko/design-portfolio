@@ -1,2 +1,3 @@
 # design-portfolio
-Portfolio Website Focused on UX/UI Interests
+
+Showcasing what I have learnt so far using HTML, CSS and Bootstrap and Javascript.
